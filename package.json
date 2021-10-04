@@ -1,0 +1,21 @@
+{
+  "name": "pdfgenerator",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "bwip-js": "^3.0.4",
+    "cdigit": "^3.0.1",
+    "express": "^4.17.1",
+    "jsbarcode": "^3.11.5",
+    "pdfkit": "^0.12.3"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.13"
+  }
+}

@@ -30,9 +30,20 @@ app.get("/", async (req, res) => {
       align: "left",
     });
     //doc.image(barcode, 20, 40, { fit: [100, 100] });
+  });
+  generateBarcode("==" + unitId).then((barcode) => {
+    doc.image(barcode, 20, 150, { fit: [100, 100] });
+    doc.image("logo.jpg", 585, 5, { fit: [30, 30] });
+    //set the label text
+    doc.fontSize(7).text("SpaceCode Solutions", 39, 200, {
+      width: 410,
+      align: "left",
+    });
+    //doc.image(barcode, 20, 40, { fit: [100, 100] });
     doc.end();
     res.send("done");
   });
+  //genarate anothere barcode
 });
 async function generateBarcode(text) {
   return new Promise((resolve, reject) => {

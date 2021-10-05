@@ -4,11 +4,13 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "dev": "nodemon index.js"
   },
   "author": "",
   "license": "ISC",
   "dependencies": {
+    "aspose.barcode": "^21.10.1",
+    "barcode": "^0.1.0",
     "bwip-js": "^3.0.4",
     "cdigit": "^3.0.1",
     "express": "^4.17.1",
